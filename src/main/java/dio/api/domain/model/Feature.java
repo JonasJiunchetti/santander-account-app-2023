@@ -1,11 +1,9 @@
 package dio.api.domain.model;
 
-import lombok.Data;
+import jakarta.persistence.Entity;
 
-@Data
-public class Feature {
+@Entity(name = "tb_feature")
+public class Feature extends BaseItem{
     
-    private Long id;
-    private String icon;
-    private String description;
+   
 }
